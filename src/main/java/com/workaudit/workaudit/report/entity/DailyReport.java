@@ -27,11 +27,9 @@ public class DailyReport {
     @Column(name = "project_id")
     private Long projectId;
 
-    // The date this report is FOR (extracted from the PDF content)
     @Column(name = "report_date", nullable = false)
     private LocalDate reportDate;
 
-    // The working date this upload was expected against
     @Column(name = "expected_date", nullable = false)
     private LocalDate expectedDate;
 
